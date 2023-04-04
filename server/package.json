@@ -1,0 +1,15 @@
+{
+	"name": "server",
+	"version": "1.0.0",
+	"description": "Authentication using some mail service",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Mayank5112",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.18.2"
+	}
+}
