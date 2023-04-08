@@ -1,0 +1,15 @@
+1. You have create simple user dashboard with backend function.
+2. New user will register via email OTP or SMS OTP or email and password, Name, contact number.
+3. Old user will login via OTP or email and password.
+4. After Login Or SignUp, User will be redirected to dashboard.
+
+Note: Technology Stack- HTML, CSS, JS, Bootstrap, ReactJs, NodeJs, MongoDB..
+
+Here, Attacching the UI of sample login page, signup page, dashboard.
+
+Sample Login UI: https://drive.google.com/file/d/1Ch-ocLQ6L9tJJNPsA2y0PZHCcQ_2iia-/view?usp=share_link
+Sample dashboard UI: https://drive.google.com/file/d/1a5DOtDlxDd0f49si50LqmeCBafx0MseM/view?usp=share_link
+
+Thanks,
+Suresh Vidyarthi
+Submission deadline: 08 April, 2023
