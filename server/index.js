@@ -7,16 +7,12 @@ import cors from "cors"
 import router from "./routes/routes.js";
 // constants
 const app = express();
-const port = process.env.PORT;
-
+const port = process.env.PORT || 5000;
+console.log(port);
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json())
 app.use(cors());
-app.use(session({
-    secret: "notagoodsecret",
-    resave: true,
-    saveUninitialized: true
-}));
+
 
 app.use("/", router);
 

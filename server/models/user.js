@@ -1,9 +1,11 @@
 import mongoose from 'mongoose';
 import bcrypt from 'bcrypt';
+import dotenv from "dotenv";
+dotenv.config();
 
 mongoose.set('strictQuery', false);
-
-mongoose.connect('mongodb://localhost:27017/dashboard', { useNewUrlParser: true })
+const uri = 'mongodb://localhost:27017/dashboard';
+mongoose.connect(process.env.URI, { useNewUrlParser: true })
     .then(() => console.log("connected to database dashboard"))
     .catch((err) => console.log("there was some issue \n" + err))
 

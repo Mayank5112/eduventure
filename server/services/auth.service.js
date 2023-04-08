@@ -26,8 +26,7 @@ async function login(req, res) {
     const { email, password } = req.body;
     const foundUser = await User.findAndValidate(email, password);
     if (foundUser) {
-        req.session.user_id = foundUser._id;
-        req.session.save();
+
         return res.json({
             "currUser": foundUser.email,
             "message": "logged in",
@@ -42,8 +41,7 @@ async function login(req, res) {
 }
 
 function logout(req, res) {
-    req.session.user_id = null;
-    req.session.destroy();
+
     res.json({ "message": "you were logged out" })
 }
 
